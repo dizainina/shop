@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Панель администратора</h1>
+        <hr>
+        <nav>
+            <br>
+            <button class="open-form">Добавить товар >></button> 
+            <button class="open-catalog"><a href="#manageGoodsForm">Управление каталогом >></a></button>
+            <button><a href="#">Добавить новость >></a></button>
+        </nav>
+        <hr><br>
+        <a href="market.html"><< Вернуться на главную</a><br><br><hr><hr>
+    </div>
+    <div class="container add-form" id="addGoodForm">
+        <button class="close-form"><< Скрыть раздел</button> 
+        <h1>Добавление нового товара</h1>
+        <hr>
+        <form id="add-product-form">
+            <label for="image-path">Изображение</label>
+            <input type="file" id="image-path" required><br>
+            <label for="name">Название</label>
+            <input type="text" id="name" required><br>
+            <label for="description">Описание</label>
+            <textarea id="description" required></textarea><br>
+            <label for="category">Категория</label>
+            <select id="category" required>
+                <option value="mens">Мужчины</option>
+                <option value="womens">Женщины</option>
+            </select><br>
+            <label for="price">Цена</label>
+            <input type="number" id="price" required><br>
+            <button type="submit">Добавить</button>
+            <button><a href="#saveToJsonButton">СОХРАНИТЬ В ФАЙЛ</a><br></button>
+        </form>
+        <a href="admin.html">В начало страницы >></a><br><br>
+        <a href="market.html"><< Вернуться на главную</a>
+    </div>
+
+    <div class="container manage-form" id="manageGoodsForm">
+        <button class="close-catalog"><< Скрыть раздел</button> 
+        <h1>Каталог</h1>
+        <hr><br>
+        <a href="#endCatalog">В конец каталога >></a> <br><br>
+        <table id="cartTable">
+            <thead>
+                <tr>
+                    <th style="width: 5%">ID</th>
+                    <th style="width: 5%">Фото</th>
+                    <th style="width: 30%">Название</th>
+                    <th style="width: 10%">Цена</th>
+                    <th style="width: 35%">Описание</th>
+                    <th style="width: 15%"></th>
+                </tr>
+            </thead>
+            <tbody id="good-item"></tbody>
+        </table>
+        <div id="endCatalog"></div>
+        <br>
+        <a href="#manageGoodsForm">В начало каталога >></a> <br><br>
+        <a href="admin.html">В начало страницы >></a> <br><br>
+        <a href="market.html"><< Вернуться на главную</a>
+    </div>
+        <div class="container">
+        <button id="saveToJsonButton" onclick="loadFromLocalStorage()">СОХРАНИТЬ В ФАЙЛ</button>
+
+        </div>
+    
+
+
+    <script src="admin.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRON DUCK одежда</title>
+    <link rel="stylesheet" href="market.css">
+</head>
+
+<body id="share" >
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+
+        <header>
+            <div class="container ">
+                <div class="column align-center">             
+                    <ul class="menu row justify-between">
+                        <li><a href="#searchInput"><img src="images/search.gif" alt="Logo" width="50%"></a></li>
+                        <li><a href="market.html"><img src="images/logo.jpg" alt="Logo" width="20%"></a></li>
+                        <li><a href="cart.html" class="cart-icon open-popup">
+                            <img src="images/basket.gif" alt="Корзина">
+                            <div id="cartIndicator" class="cartIndicator disp_none"></div>
+                        </a></li>
+                    </ul>
+                    <ul class="categories menu row center" id="nav-menu">
+                        <li data-category="all"><a href="#news.html">НОВИНКИ</a></li>
+                        <li data-category="womens"><a href="#womens.html">ЖЕНЩИНАМ</a></li>
+                        <li data-category="mens"><a href="#mens.html">МУЖЧИНАМ</a></li>
+                        <li><a href="#delivery.html">ДОСТАВКА И ОПЛАТА</a></li>
+                        <li><a href="#about.html">О МАГАЗИНЕ</a></li>
+                        <li><a href="#contact.html">КОНТАКТЫ</a></li>
+                    </ul>
+                    <a href="admin.html">Вход для администратора</a>
+                </div>
+            </div>
+        </header>
+        
+        <div class="container row">
+            <img src="images/photo-1.png" alt="bg" width="100%" >
+        </div>
+        <div class="container row">
+            <input type="text" id="searchInput" placeholder="Поиск товаров">
+        </div>
+        <main>
+            
+            <div class="goods">
+            </div>
+        </main>
+    </div>
+
+        <!-- Кнопка с вызовом всплывающего окна с оформлением заказа -->
+        <section class="popup__bg">
+            <div class="popup cart-content">
+                    <span class="close-popup">&times;</span>
+                        <h1>КОРЗИНА</h1>
+                        <div class="cart">
+                            <table id="cartTable">
+                                <thead>
+                                    <tr>
+                                        <th>Изображение</th>
+                                        <th style="width: 40%">Название</th>
+                                        <th style="width: 10%">Цена</th>
+                                        <th style="width: 20%">Количество</th>
+                                        <th style="width: 13%">Стоимость</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cart-item"></tbody>
+                            </table>
+                            <p id="totalQuantity">Всего товаров в корзине: 0 шт.</p>
+                            <p id="total-price">Общая стоимость: 0 руб.</p>
+                            <button class="product-button order-btn">ОФОРМИТЬ ЗАКАЗ</button> 
+                    </div>
+            </div>
+        </section>
+        <button class="product-button buttonPlaceOrder open-popup">ПЕРЕЙТИ В КОРЗИНУ</button>
+
+    <!-- <script type="text/javascript">shineLinks('menu-act');</script> -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js">
+    </script>
+    <script type="module" src="market.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+a {
+    color: rgb(11, 29, 44);
+    text-decoration: none;
+    margin: 1vw;
+}
+
+a:hover{
+    color: rgb(194, 23, 23);
+    font-weight: 600;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px;
+}
+
+.disp_none {
+    display: none;
+}
+
+/* ************************Добавить товар************************* */
+form {
+    background: linear-gradient(90deg, #584669,#8083a9,#acc5e9);
+    border-radius: 15px;
+    width: 50vw;
+    margin: 20px auto;
+    padding: 20px;
+    color: white;
+}
+
+input, textarea, select {
+    width: 70%;
+    height: 40px;
+    border-radius: 2px;
+    border-width: 0;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 3px;
+}
+
+button {
+    width: 100%;
+    border-width: 0;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.3);
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+#saveToJsonButton {
+    background: linear-gradient(90deg, #ff5b01,#6241af);
+    color: white;
+}
+
+.add-form, .manage-form {
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
+    /* width: 100%;
+    height: 100vh;
+    background: rgba(53, 51, 51, 0.7); */
+    display: none;
+    pointer-events: none; 
+    transition: 0.5s all;
+}
+
+.add-form.active, .manage-form.active { 
+    display: block; 
+    pointer-events: all; 
+    transition: 0.5s all;
+}
+
+/* ************************Редактировать каталог************************* */
+
+table {
+    width: 100%;
+}
+
+tr, td {
+    text-align: center;
+    border-bottom: 1px solid #b4adad;
+}
