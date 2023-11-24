@@ -44,17 +44,6 @@ $("#nav-menu li a").click(function () {
   $(this).addClass("active");
 });
 
-// const links = document.querySelectorAll("#nav-menu li a");
-
-// links.forEach((a) => {
-//   a.addEventListener("click", () => {
-//     a.classList.remove('active')
-//     // вернет false, так как такого класса у элемента нет
-//     if(a.classList.contains('active') == 'false'){
-//       a.classList.add('active')
-//     }
-//   });
-// });
 
 //класс товара
 class Good {

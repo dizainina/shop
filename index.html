@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IRON DUCK одежда</title>
-    <link rel="stylesheet" href="public/market.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body id="share" >
@@ -19,16 +19,16 @@
                 <div class="column align-center">             
                     <ul class="menu row justify-between">
                         <li><a href="#searchInput"><img src="images/search.gif" alt="Logo" width="50%"></a></li>
-                        <li><a href="market.html"><img src="images/logo.jpg" alt="Logo" width="20%"></a></li>
+                        <li><a href="index.html"><img src="images/logo.jpg" alt="Logo" width="20%"></a></li>
                         <li><a href="cart.html" class="cart-icon open-popup">
                             <img src="images/basket.gif" alt="Корзина">
                             <div id="cartIndicator" class="cartIndicator disp_none"></div>
                         </a></li>
                     </ul>
                     <ul class="categories menu row center" id="nav-menu">
-                        <li data-category="all"><a href="#news.html">НОВИНКИ</a></li>
-                        <li data-category="womens"><a href="#womens.html">ЖЕНЩИНАМ</a></li>
-                        <li data-category="mens"><a href="#mens.html">МУЖЧИНАМ</a></li>
+                        <li data-category="all"><a href="#goods">НОВИНКИ</a></li>
+                        <li data-category="womens"><a href="#goods">ЖЕНЩИНАМ</a></li>
+                        <li data-category="mens"><a href="#goods">МУЖЧИНАМ</a></li>
                         <li><a href="#delivery.html">ДОСТАВКА И ОПЛАТА</a></li>
                         <li><a href="#about.html">О МАГАЗИНЕ</a></li>
                         <li><a href="#contact.html">КОНТАКТЫ</a></li>
@@ -46,7 +46,7 @@
         </div>
         <main>
             
-            <div class="goods">
+            <div class="goods" id="goods">
             </div>
         </main>
     </div>
@@ -80,7 +80,7 @@
     <!-- <script type="text/javascript">shineLinks('menu-act');</script> -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js">
     </script>
-    <script type="module" src="public/market.js"></script>
+    <script type="module" src="js/index.js"></script>
 </body>
 
 </html>
